@@ -1,0 +1,42 @@
+<%-include('../partials/header.ejs')%>
+<div class="container m-auto">
+  
+  <div  class="">
+<h1>BOOK-INFORMATION</h1>
+  </div>
+<form method="post" class="col-5">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Book name</label> <br/>
+    <input type="text" class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text"></div>
+  </div>
+  <br/>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Booktype</label> <br/>
+    <input type="text" class="form-control" name="booktype" id="exampleInputPassword1">
+  </div>
+<br/>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Author</label> <br/>
+    <input type="text" class="form-control" name="author" id="exampleInputPassword1">
+  </div>
+<br/>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Year Of Publish</label> <br/>
+    <input type="text" class="form-control" name="pyear" id="exampleInputPassword1">
+  </div>
+<br/>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Stock</label> <br/>
+    <input type="text" class="form-control" name="stock" id="exampleInputPassword1">
+  </div>
+<br/>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Price</label> <br/>
+    <input type="text" class="form-control" name="price" id="exampleInputPassword1">
+  </div>
+<br/>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+<%-include('../partials/footer.ejs')%>

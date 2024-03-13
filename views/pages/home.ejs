@@ -1,0 +1,37 @@
+<%-include('../partials/header.ejs')%>
+<div class="container mt-3">
+<a href="/add" class="btn btn-primary">Add book</a>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>NAME</th>
+      <th>BOOK-TYPE</th>
+      <th>PRICE</th>
+      <th>AUTHOR</th>
+      <th>PUBLISH-YEAF</th>
+      <th>STOCK</th>
+      <th>action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% books.forEach((book)=>{ %>
+        <tr>
+            <td><%=book.name %></td>
+            <td><%=book.booktype%></td>
+             <td><%=book.price %></td>
+            <td><%=book.author %></td>
+            <td><%=book.pyear %></td>
+            <td><%=book.stock %></td>
+            <td>
+                <a
+                href="/delete/<%=book.id%>"
+                class="btn btn-danger"
+                >Delete</a>
+            </td>
+        </tr>
+        <% }) %> <%-include('../partials/footer.ejs')%>
+  </tbody>
+</table>
+</div>
+
